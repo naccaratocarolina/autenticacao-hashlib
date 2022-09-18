@@ -29,7 +29,7 @@ data = f.read()
 hash512 = hashlib.sha512(data).digest()
 hashInt = int.from_bytes(hash512, byteorder = 'big')
 signature = pow(hashInt, keyPair.d, keyPair.n)
-print("Signature:", hex(signature))
+print("Assinatura:", hex(signature), end = '\n\n')
 
 # ================================================
 # Verifica assinatura
@@ -38,4 +38,4 @@ print("Signature:", hex(signature))
 hash512 = hashlib.sha512(data).digest()
 hashInt = int.from_bytes(hash512, byteorder = 'big')
 hashFromSignature = pow(signature, keyPair.e, keyPair.n)
-print("Signature valid:", hashInt == hashFromSignature)
+print("Mensagem é confiável?", hashInt == hashFromSignature)
