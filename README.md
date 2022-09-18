@@ -28,8 +28,8 @@ print(pdf.getDocumentInfo())
 - Criação da hash
 ``` python
 data = f.read()
-hashMD5 = hashlib.md5(data).hexdigest()
-hash512 = hashlib.sha512(data).hexdigest()
+hashMD5 = hashlib.md5(data).digest()
+hash512 = hashlib.sha512(data).digest()
 ```
 
 - Fechar arquivo
