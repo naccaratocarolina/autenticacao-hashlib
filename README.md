@@ -1,6 +1,16 @@
 # Autenticação Hashlib
+1. [Requisitos](#requisitos)
+2. [Uso](#uso)
+3. [Instruções](#instruções)
 
-## Uso:
+
+## Requisitos
+
+``` python
+pip install pycryptodome
+```
+
+## Uso
 
 - Imports
 ``` python
@@ -25,4 +35,10 @@ hash512 = hashlib.sha512(data).hexdigest()
 - Fechar arquivo
 ``` python
 f.close()
+```
+
+## Instruções
+- Gerar par de chaves públicas e privadas
+``` python
+python generateKeyPair.py
 ```
