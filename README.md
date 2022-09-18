@@ -38,7 +38,7 @@ f.close()
 ```
 
 ## Instruções
-- Gerar par de chaves públicas e privadas
+
 ``` python
-python generateKeyPair.py
+python main.py
 ```
